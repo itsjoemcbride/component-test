@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button';
+
+const buttonSetup = [
+  {label: "Rock", color: "red"},
+  {label: "Paper", color: "green"},
+  {label: "Scissors", color: "blue"},
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello World!</h1>
+      <Button {...buttonSetup[0]}/>
+      <Button {...buttonSetup[1]}/>
+      <Button {...buttonSetup[2]}/>
     </div>
   );
 }
